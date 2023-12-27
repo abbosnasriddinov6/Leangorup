@@ -1,0 +1,160 @@
+@import'../../scss/main.scss';
+.header{
+    width: 100%;
+    height: 900px;
+    // border: $border;
+    .nav{
+        width: 100%;
+        height: 15%;
+        flex-shrink: 0;
+        background: #FFF;
+        box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+        position: fixed;
+        top: 0;left: 0;right: 0;
+        background: #fff;
+        z-index: 1000;
+        // border: $border; 
+        .navbar{
+            display: flex;
+            width: 85%;
+            height: 100%;
+            margin: 0 auto;
+            // border: $border;
+            .Logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18%;
+                height: 100%;
+                // border: $border;
+                .logo{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+            .links{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 65%;
+                height: 100%;
+                // border: $border;
+                ul{
+                    display: flex;
+                    gap: 30px;
+                    li{
+                        color: var(--color-text, #2C2D2E);
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; 
+                        &:hover{
+                            color: var(--color-primary, #EF7C00);
+                        }
+                        hr{
+                            background: rgba(0, 16, 61, 0.12);
+                        }
+                    }
+                }
+            }
+
+            .dark{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17%;
+                height: 100%;
+                // border: $border;
+                .onof{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+        }   
+    }
+
+    .backround{
+        margin-top: 130px;
+        width: 100%;
+        height: 80%;
+        background-image: url(../../assets/images/backround.png);
+        background-repeat: no-repeat; 
+        background-size: 100%;   
+        // border: $border;
+        .back{
+            width: 85%;
+            height: 100%;
+            margin: 0 auto;
+            // border: $border;
+            .words{
+                width: 50%;
+                height: 100%;
+                padding: 190px 60px;
+                // border: $border;
+                h3{
+                    width: 290px;
+                    color: #2C2D2E;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 13px; /* 100% */
+                }
+                h1{
+                    margin-top: 50px;
+                    width: 380px;
+                    color: #2C2D2E;
+                    font-family: 'Montserrat', sans-serif;;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px; /* 125% */
+                }
+                p{
+                    margin-top: 40px;
+                    width: 582px;
+                    height: 69px;
+                    flex-shrink: 0; 
+                    color: #2C2D2E;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 133.333% */
+                }
+                button{
+                    margin-top: 60px;
+                    display: inline-flex;
+                    padding: 20px 30px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                    background: #EF7C00;
+                    color: var(--text-color-text-contrast, #FFF);
+                    text-align: center;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 133.333% */
+                    border: none;
+
+                }
+                .smallbuttons{
+                    margin-top: 230px;
+                    display: flex;
+                    align-items: center;
+                    width: 90px;
+                    height: 30px;
+                    // border: $border;
+                    img{
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

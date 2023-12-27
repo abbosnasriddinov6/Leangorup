@@ -1,0 +1,87 @@
+@import'../../scss/main.scss';
+.Footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 16, 61, 0.06);
+    // border: $border;
+    .div{
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        // border: $border;
+        .logoand{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 20%;
+            // border: $border;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 60%;
+            // border: $border;
+            .production{
+                padding: 20px 0 ;
+                width: 300px;
+                height: 280px;
+                // border: $border;
+                h2{
+                    width: 203px;  
+                     color: var(--color-text, #2C2D2E);
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px; /* 116.667% */
+                }
+                h4{
+                    margin-top: 10px;
+                    width: 203px;
+                    color: var(--color-text, #2C2D2E);
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                }
+                h3{
+                    color: var(--color-primary, #EF7C00);
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+
+                }
+                .maskva{
+                    margin-top: 20px;
+                }
+                .maskvaa{
+                    margin-top: 50px;
+                }
+            
+            }
+        }
+        .lastly{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 20%;
+            // border: $border;
+            p{
+                width: 366px;
+                color: var(--color-text-secondary, #919399);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 13px; /* 100% */
+            }
+        }
+    }
+}
