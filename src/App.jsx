@@ -3,6 +3,7 @@ import './scss/main.scss';
 import { Home } from './pages';
 
 const App = () => {
+
   return (
     <div>
       <Home />

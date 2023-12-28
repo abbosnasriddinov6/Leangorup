@@ -1,20 +1,43 @@
-import React from 'react';
-import {  Header, Footer, Section1, Section2, Section3, Section4, Section5, Section6   } from './../../components';
+import React, {Component} from 'react';
+import {  Header, Footer, Section1, Section2, Section3, Section4, Section5, Section6, Backtop   } from './../../components';
 
-const Home = () => {
-  return (
-    <>
-    <Header/>
-    <Section1/>
-    <Section2/>
-    <Section3/>
-    <Section4/>
-    <Section5/>
-    <Section6/>
-    <Footer/>
-       
-    </>
-  );
-};
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      darkMode: false,
+    };
+  }
+  handleBacktop = () => {
+    window.scrollTo({
+      top: 100,
+      behavior: 'smooth'
+    });
+  };
+  render() {
+    const { darkMode } = this.state;
+    return (
+      <div className={`app ${darkMode ? 'dark' : ''}`}>
+        <Header/>
+        <Section1/>
+        <Section2/>
+        <Section3/>
+        <Section4/>
+        <Section5/>
+        <Section6/>
+        <Footer/>
+        <Backtop handleBacktop={this.handleBacktop} />
+      </div>
+    );
+  }
+  }
+
+
+
+
+    
+   
 
 export default Home;
+// export default App;

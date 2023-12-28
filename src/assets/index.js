@@ -111,3 +111,7 @@ import social from './images/social.svg';
 export { social };
 
 
+import backtop from './images/backtop.svg';
+
+export { backtop };
+
